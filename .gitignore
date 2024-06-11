@@ -1,0 +1,68 @@
+dataset.txt
+cached_lm_*
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+*.dll
+
+# Distribution / packaging
+dist/
+build/
+develop-eggs/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+
+# IDE / editor specific files
+# Choose the relevant ones for your editor
+.idea/
+.vscode/
+.spyderproject/
+.mypy_cache/
+yourapp.sublime-project
+yourapp.sublime-workspace
+
+# System specific files
+*.swp
+*.swo
+
+# Temporary virtualenv
+.venv/
+env/
+
+# Notebooks
+*.ipynb
+
+# Docs
+docs/_build/
+
+# CI/CD
+.github/workflows/
+
+# Markdown linter reports
+*.md.html
+
+# Poetry specific
+poetry.lock

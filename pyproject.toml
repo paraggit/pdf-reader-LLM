@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "pdf-reader-llm"
+version = "0.1.0"
+description = "LLM for pdf to text"
+authors = ["Parag Kamble <kamble.parag@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+PyMuPDF = "^1.24.5"
+transformers = "^4.41.2"
+torch = "^2.3.1"
+fastapi = "^0.111.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+flake8 = "^7.0.0"
+pre-commit = "^3.7.1"
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+
+[tool.poetry.scripts]
+pdf_text_extraction = "src.main:main"
+pdf_bot = "src.bot_api:main"
